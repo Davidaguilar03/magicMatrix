@@ -1,6 +1,5 @@
 package controller;
 
-
 import model.*;
 import view.IoManager;
 
@@ -12,7 +11,8 @@ public class Control {
 	}
 
 	public void init() {
-		Chess chess= new Chess();
-		io.showMessage(chess.showBoard());
+		Matrix matrix = new Matrix();
+		io.showMessage(matrix.showMatrix());
+		io.showMessage(matrix.isMagicMatrix() ? "Si es una matriz magica" : "No es una matriz magica");
 	}
 }
